@@ -172,7 +172,7 @@ paginate: 5
 
 kramdown:
   input: GFM
-  math_engine: katex
+  math_engine: mathjax # katex
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -184,7 +184,8 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-      readtime: false # add estimated reading time on all blog posts
+      readtime: true # add estimated reading time on all blog posts
+      ext-js: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTM"
   -
     scope:
       path: "" # all files
