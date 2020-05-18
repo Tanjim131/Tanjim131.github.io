@@ -19,7 +19,8 @@ navbar-links:
   #   - Learn markdown: "https://www.markdowntutorial.com/"
   Archive: "archive"
   Category: "tags"
-  Resume | CV: "resume/Tanjim Bin Faruk.pdf"
+  #Resume | CV: "resume/Tanjim Bin Faruk.pdf"
+  #Resume | CV: "https://drive.google.com/file/d/1h33xzdW1lZUlnrezUI8A9jYmN5euCcbr/view?usp=sharing"
 
 # --- Logo --- #
 
