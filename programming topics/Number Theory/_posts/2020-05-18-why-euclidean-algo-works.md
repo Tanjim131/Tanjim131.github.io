@@ -55,8 +55,8 @@ Where, $a \geq b$ and the complexity is given in the number of division steps. <
 
 <a name="lemma1"></a>
 <div class="lemma" text='1'>
-    $c \mid a, b  \Longleftrightarrow c \mid d $ for $d = \ddfrac{ab}{\rm{lcm}(a,b)}$. Hence $ d = \gcd(a,b) $. <br>
-    <b> <i> Proof </i> </b>: $c \mid a, b  \Longleftrightarrow a,b \mid \ddfrac{ab}{c} \Longleftrightarrow \rm{lcm}(a,b) \mid \ddfrac{ab}{c} \Longleftrightarrow c \mid \ddfrac{ab}{\rm{lcm}(a,b)}$ 
+    $c \mid a, b  \Longleftrightarrow c \mid d $ for $d = \ddfrac{ab}{\lcm{(a,b)}}$. Hence $ d = \gcd(a,b) $. <br>
+    <b> <i> Proof </i> </b>: $c \mid a, b  \Longleftrightarrow a,b \mid \ddfrac{ab}{c} \Longleftrightarrow \lcm{(a,b)} \mid \ddfrac{ab}{c} \Longleftrightarrow c \mid \ddfrac{ab}{\lcm{(a,b)}}$ 
 </div>
 
 <a name="lemma2"></a>
