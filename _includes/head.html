@@ -123,9 +123,9 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script>
     MathJax = {
-      loader: {load: ['[tex]/newcommand']},
+      loader: {load: ['[tex]/newcommand', '[tex]/color']},
       tex: {
-        packages: {'[+]': ['newcommand']},
+        packages: {'[+]': ['newcommand', 'color']},
         inlineMath: [['$','$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'],['\\[', '\\]']],
         macros: {
@@ -133,7 +133,8 @@
           ddfrac: ['{\\frac{\\displaystyle #1}{\\displaystyle #2}}', 2],
           abs: ['\\left\\lvert #2 \\right\\rvert_{\\text{#1}}', 2, ""],
           floor: ['\\left\\lfloor #2 \\right\\rfloor_{\\text{#1}}', 2, ""],
-          sfrac: ['{ \\frac {\\ #1 \\ }{#2}}', 2]
+          sfrac: ['{ \\frac {\\ #1 \\ }{#2}}', 2],
+          lcm: ['\\operatorname{lcm}#1', 1]
         },
         processEscapes: true,
         processEnvironments: true,

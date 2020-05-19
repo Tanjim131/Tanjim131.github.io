@@ -68,7 +68,7 @@ The technique is to find an equal quantity that we can add with $432$ and subtra
 
 Where, $432\cdot p$ and $126\cdot q$ will cancel each other out (Opposite signs).
 
-How can we can get an equal quantity my multiplying both $432\cdot p$ and $126\cdot q~?$ We have to choose $p$ and $q$ as such that after multiplying with $432$ and $126$ respectively, it will give $\rm{lcm}(432,126)$. Now, $\rm{lcm}(432,126) = 3024$. So,
+How can we can get an equal quantity my multiplying both $432\cdot p$ and $126\cdot q~?$ We have to choose $p$ and $q$ as such that after multiplying with $432$ and $126$ respectively, it will give $\lcm(432,126)$. Now, $\lcm(432,126) = 3024$. So,
 
 \\[ 432\cdot p = 3024 \\]
 \\[ p = 7 \\]
@@ -85,7 +85,7 @@ So, $(p,q) = (7,-24)$. $(p,q) = (-7,24)$ will also work. <br> <br> For $(p,q) = 
     432\cdot(-2 + 7) + 126\cdot(7 - 24) = 18
 \end{equation}
 
-For any multiples of $\rm{lcm}(432,126)$, \eqref{bz:allsol2} becomes,
+For any multiples of $\lcm(432,126)$, \eqref{bz:allsol2} becomes,
 
 \begin{equation}
     432\cdot(-2 + 7m) + 126\cdot(7 - 24m) = 18
