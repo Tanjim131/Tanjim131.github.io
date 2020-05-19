@@ -2,7 +2,7 @@
 layout: post
 title: Why does the Euclidean Algorithm for finding G.C.D of two number work?
 subtitle: A look into the inner workings of the Euclidean Algorithm
-tags: [Number Theory, Problem Solving]
+tags: [Number Theory]
 comments: true
 ---
 

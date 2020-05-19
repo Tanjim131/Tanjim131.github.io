@@ -2,7 +2,7 @@
 layout: post
 title: Bezout's Identity
 subtitle: Statement and Demonstration of Bezout's Identity
-tags: [Number Theory, Problem Solving]
+tags: [Number Theory]
 comments: true
 ---
 
