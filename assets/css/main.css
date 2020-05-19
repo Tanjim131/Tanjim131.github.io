@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Kalpurush', 'Lora', 'Times New Roman', serif;
+  font-family: 'Lora', 'Times New Roman', 'Kalpurush', serif;
   font-size: 1.125rem;
   color: #404040;
   position: relative;
@@ -915,4 +915,23 @@ pre {
   color: #808080;
   font-style: italic;
   font-size: 1rem;
+}
+
+.lemma {
+  display: block;
+  font-style: italic;
+}
+
+.lemma:before {
+  content: "Lemma. ";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lemma[text]:before {
+  content: "Lemma (" attr(text) ") : ";
+}
+
+html {
+  scroll-behavior: smooth;
 }
