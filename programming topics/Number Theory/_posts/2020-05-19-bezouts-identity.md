@@ -6,10 +6,9 @@ tags: [Number Theory]
 comments: true
 ---
 
-<b>  Statement </b>: $\forall a,b \in \mathbb{Z}, \exists x,t \in \mathbb{Z}$, such that $ ax + by = \gcd (a,b) $.
+**Statement**: $\forall a,b \in \mathbb{Z}, \exists x,t \in \mathbb{Z}$, such that $ ax + by = \gcd (a,b) $.
 
-<b> Demonstration </b>: Let $a = 432$ and $b = 126$. Then from <a href = "/2020-05-18-why-euclidean-algo-works"> Euclid's algorithm </a>, it follows that, 
-
+**Demonstration**: Let $a = 432$ and $b = 126$. Then from [Euclid's algorithm](./2020-05-18-why-euclidean-algo-works.md), it follows that, 
 
 \begin{equation}
     \label{bz:gcd1}
@@ -53,11 +52,11 @@ Now we replace, \eqref{bz:gcd4} in \eqref{bz:gcd5},
 
 Therefore, $x = -2$ and $ y = 7$.
 
-<b> Observation </b>: $x$ and $y$ are co-prime and $x \mid a$ and $y \mid b$.
+**Observation**: $x$ and $y$ are co-prime and $x \mid a$ and $y \mid b$.
 
-<b> <i> Question </i> </b>: Is this the only solution $?$
+***Question***: Is this the only solution $?$
 
-<b> <i> Answer </i> </b>: No. We can actually find the system of equations for which the identity holds.
+***Answer***: No. We can actually find the system of equations for which the identity holds.
 
 The technique is to find an equal quantity that we can add with $432$ and subtract from $126$ or vice versa. What that means is, we'll rewrite the equation as, 
 
@@ -78,7 +77,9 @@ And, as $p$ and $q$ has to be opposite, we get,
 \\[ 126\cdot q = -3024 \\]
 \\[ q = -24 \\]
 
-So, $(p,q) = (7,-24)$. $(p,q) = (-7,24)$ will also work. <br> <br> For $(p,q) = (7,-24)$, \eqref{bz:allsol1} becomes,
+So, $(p,q) = (7,-24)$. $(p,q) = (-7,24)$ will also work.  
+ 
+For $(p,q) = (7,-24)$, \eqref{bz:allsol1} becomes,
 
 \begin{equation}
     \label{bz:allsol2}
@@ -98,15 +99,15 @@ So, the values of $x$ and $y$ for which the identity holds true, are the solutio
 
 Where, $m \in \mathbb{Z}$.
 
-<h2> <u> Corollary of Bezout's Lemma </u> </h2>
+## <u> Corollary of Bezout's Lemma </u> 
 
-<b> <i> Question </i> </b>: If $n \mid ab$ and $n \nmid a$, does that imply $n \mid b ~?$ 
+***Question***: If $n \mid ab$ and $n \nmid a$, does that imply $n \mid b ~?$ 
 
-<b> <i> Answer </i> </b>: No.
+***Answer***: No.
 
-<b> <i>  <u> Claim </u> </i> </b>: If $n \mid ab$ and $\gcd(n,a) = 1$, then $n \mid b$.
+***<u>Claim</u>***: If $n \mid ab$ and $\gcd(n,a) = 1$, then $n \mid b$.
 
-<b> <i> <u> Proof </u> </i> </b>: Since, $\gcd(n,a) = 1$, $\exists x,y \in \mathbb{Z} $ such that $ nx + ay = 1$. Multiplying both sides by $b$,
+***<u>Proof</u>***: Since, $\gcd(n,a) = 1$, $\exists x,y \in \mathbb{Z} $ such that $ nx + ay = 1$. Multiplying both sides by $b$,
 
 \begin{equation}
 \label{eqn:gcd1}

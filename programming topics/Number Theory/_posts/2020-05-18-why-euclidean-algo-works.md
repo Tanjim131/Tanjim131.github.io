@@ -54,7 +54,7 @@ Taken together, this argument shows that you can replace your problem for $(a,b)
 Where, $a \geq b$ and the complexity is given in the number of division steps.  
 ( Source: [The Art of Computer Programming : Volume 2](https://dl.acm.org/doi/book/10.5555/270146) )
 
-#### ***Lemma 1***
+### ***Lemma 1***
 $c \mid a, b  \Longleftrightarrow c \mid d $ for $d = \ddfrac{ab}{\lcm{(a,b)}}$. Hence $ d = \gcd(a,b) $.  
 ***Proof***: $c \mid a, b  \Longleftrightarrow a,b \mid \ddfrac{ab}{c} \Longleftrightarrow \lcm{(a,b)} \mid \ddfrac{ab}{c} \Longleftrightarrow c \mid \ddfrac{ab}{\lcm{(a,b)}}$ 
 

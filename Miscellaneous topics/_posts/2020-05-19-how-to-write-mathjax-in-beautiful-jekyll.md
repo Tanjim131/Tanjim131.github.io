@@ -6,7 +6,7 @@ tags: [Miscellaneous, LaTeX]
 comments: true
 ---
 
-In this post, I'll write about how I integrated latex typesetting into beuatiful-jekyll based web page. Check out <a href="https://github.com/daattali/beautiful-jekyll"> beautiful-jekyll website </a> to learn more about how to set up a personal website/blog within minutes. 
+In this post, I'll write about how I integrated latex typesetting into beuatiful-jekyll based web page. Check out [beautiful-jekyll website](https://github.com/daattali/beautiful-jekyll) to learn more about how to set up a personal website/blog within minutes. 
 
 I used mathjax version 3.0 for writing latex. One of the nice things about beautiful-jekyll is that a lot of options are supported out of the box. So, it's just a matter off specifying some options instead of writing them yourself.
 
@@ -28,7 +28,8 @@ That's all there is to tweak in the ``_config`` file.
 Now browse to ``/_includes/head.html``. At the bottom of the page, before the ``</head>`` tag, add the following lines:
 
 {% highlight javascript linenos %}
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"> </script>
+
 <script>
 MathJax = {
     loader: {load: ['[tex]/newcommand', '[tex]/color']},
@@ -62,19 +63,19 @@ MathJax = {
     }
 };
 </script>
+
 <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+
 {% endhighlight %}
 
-You'll find the detailed explanation of the various fields and their uses on <a href="http://docs.mathjax.org/en/latest/"> MathJax 3.0 Documentation </a>. I won't bother you with the details here. 
+You'll find the detailed explanation of the various fields and their uses on [MathJax 3.0 Documentation](http://docs.mathjax.org/en/latest/). I won't bother you with the details here. 
 
 That's all you need to do. You can now start writing latex. 
 
-<<<<<<< HEAD
 One thing to look out for is to be careful about writing latex in markdown files. MathJax doesn't support ``\emph``, ``\begin{enumerate} ... \end{enumerate}`` or other text-mode macros or environments. You have to use ``HTML`` or ``markdown`` to handle such formatting tasks. 
-=======
-One thing to look out for is to be careful about writing latex in markdown files. MathJax doesn't support ``\emph``, ``\begin{enumerate} ... \end{enumerate}`` or other text-mode macros or environments. You have to use ``HTML`` to handle such formatting tasks. 
->>>>>>> da0e54ea33928298dadf66323587ca9882d08ece
+
+Also check out [this awsome stackexchange post](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) for a comprehensive reference to writing MathJax!
 
 If you have any questions, feel free to contact me! 
