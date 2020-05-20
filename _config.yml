@@ -93,9 +93,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/3.jpg"
+footer-img: "/assets/img/2.jpg"
+page-img: "/assets/img/1.jpg"
 
 # --- Web Statistics Section --- #
 
