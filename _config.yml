@@ -173,10 +173,7 @@ paginate: 5
 kramdown:
   input: GFM
   math_engine: mathjax # katex
-<<<<<<< HEAD
   auto_ids: true
-=======
->>>>>>> da0e54ea33928298dadf66323587ca9882d08ece
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
