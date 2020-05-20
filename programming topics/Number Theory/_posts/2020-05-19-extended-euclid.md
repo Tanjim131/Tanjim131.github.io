@@ -10,7 +10,7 @@ For two integers, $a$ and $b$, extended euclidean algorithm computes $\gcd(a,b)$
 
 \\[ ax + by = \gcd(a,b) \\]
 
-From <a href = "/2020-05-19-bezouts-identity"> Bezout's Identity </a>, we know that a solution to this equation exists.
+From [Bezout's Identity](./2020-05-19-bezouts-identity.md), we know that a solution to this equation exists.
 
 Let, $\gcd(a,b) = g$. When, $(a,b) = (g,0)$, the equation has a trivial solution, $(x,y) = (1,0)$. We get this value when we follow the computation trail of the normal euclidean algorithm. We can then backtrack recursively to get the $(x,y)$ pair for the original $(a,b)$ pair.
 

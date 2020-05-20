@@ -14,28 +14,24 @@ for some modulus $m \in \mathbb{Z}$. The above congruence can also be written as
 
 \\[ a \cdot a^{-1} \equiv 1 ~(\textrm{mod}~m) \\]
 
-<h2> <u> When does MMI exist ? </u> </h2>
+## <u> When does MMI exist ? </u>
 
 The modular multiplicative inverse exists iff $a$ and $m$ are relatively prime, i.e., $\gcd(a,m) = 1$.
 
-<h2> <u> Computing MMI </u> </h2>
-
-<ol>
-<li> <h3> <u> Naive Implementation </u> </h3> </li>
+## <u> Computing MMI </u> <br> <br>
+### 1. <u> Naive Implementation </u> 
 
 We know that,
 
-\[ ax ~\textrm{mod}~m = ((a~\textrm{mod}~m) \cdot (x~\textrm{mod}~m))~\textrm{mod}~m\]
+\\[ ax ~\textrm{mod}~m = ((a~\textrm{mod}~m) \cdot (x~\textrm{mod}~m))~\textrm{mod}~m\\]
 
-$ x~\textrm{mod}~m $ will be any number between $0, 1, \cdots , m - 1$. So, we'll take numbers between $1,\cdots, m - 1$ one at a time, multiply that with $a~\textrm{mod}~m$ and check if the multiplication results in 1 modulo $m$. <br> <br>
+$ x~\textrm{mod}~m $ will be any number between $0, 1, \cdots , m - 1$. So, we'll take numbers between $1,\cdots, m - 1$ one at a time, multiply that with $a~\textrm{mod}~m$ and check if the multiplication results in 1 modulo $m$.  
 
-<b> Time Complexity </b>: $\mathcal{O}(m)$ 
+**Time Complexity**: $\mathcal{O}(m)$  
 
-<br> <br>
+### 2. <u> Using Extended Euclidean Algorithm </u> 
 
-<li> <h3> <u> Using Extended Euclidean Algorithm </u> </h3> </li>
-
-From <a href="/2020-05-19-extended-euclid"> Extended Euclidean Algorithm </a>, we know that the $\gcd(a,m)$ can be expressed in a linear equation,
+From [Extended Euclidean Algorithm](./2020-05-19-extended-euclid.md), we know that the $\gcd(a,m)$ can be expressed in a linear equation,
 
 \begin{equation}
     \label{MMIUEEA}
@@ -52,42 +48,40 @@ So, $x$ is modular multiplicative inverse of $a~\textrm{mod}~m$.
 
 In general, if $a$ and $b$ are co-prime, then from the following equation,
 
-\[ a\cdot x + b\cdot y = \gcd(a,b) = 1\]
+\\[ a\cdot x + b\cdot y = \gcd(a,b) = 1\\]
 
-$x$ is the modular multiplicative inverse of $a~\textrm{mod}~b$ and $y$ is the modular multiplicative inverse of $b~\textrm{mod}~a$. Either $x$ or $y$ will be negative in this case.
+$x$ is the modular multiplicative inverse of $a~\textrm{mod}~b$ and $y$ is the modular multiplicative inverse of $b~\textrm{mod}~a$. Either $x$ or $y$ will be negative in this case.  
 
-<br> <br>
+**Time Complexity**: Generally more efficient than [Exponentiation By Squaring](./2020-05-19-exponentiation-by-squaring.md).
 
-<b> Time Complexity </b>: Generally more efficient than <a href="/2020-05-19-exponentiation-by-squaring"> Exponentiation By Squaring </a>.
-
-\[ \mathcal{O}(\log~(m)^{2})~\textrm{(Recursive, Two-pass)} \]
-\[ \mathcal{O}(\log~m)~\textrm{(Iterative, One-pass)} \] 
+\\[ \mathcal{O}(\log~(m)^{2})~\textrm{(Recursive, Two-pass)} \\]
+\\[ \mathcal{O}(\log~m)~\textrm{(Iterative, One-pass)} \\] 
 
 
-<b> Demonstration </b>: Let $a = 84$ and $b = 23$, then $\gcd(a,b) = \gcd(84,23) = 1$ and they can be expressed as,
+**Demonstration**: Let $a = 84$ and $b = 23$, then $\gcd(a,b) = \gcd(84,23) = 1$ and they can be expressed as,
 
-\[ 84\cdot(-3) + 23\cdot11 = 1\]
+\\[ 84\cdot(-3) + 23\cdot11 = 1\\]
 
 Therefore, $x = -3$ and $y = 11$.
 
-For ease of calculation positive remainder is used. <br> Therefore, $x = (-3)~\textrm{mod}~23 = (-3) + 23 = 20$.
+For ease of calculation positive remainder is used. 
+
+Therefore, $x = (-3)~\textrm{mod}~23 = (-3) + 23 = 20$.
 
 We can verify that the co-efficients are indeed correct. 
 
-\[ ax \equiv 1 ~\textrm{mod}~b \]
-\[ \Rightarrow 84 \cdot 20 \equiv 1~\textrm{mod}~23\]
+\\[ ax \equiv 1 ~\textrm{mod}~b \\]
+\\[ \Rightarrow 84 \cdot 20 \equiv 1~\textrm{mod}~23\\]
 
 And,
 
-\[ by \equiv 1 ~\textrm{mod}~a \]
-\[ \Rightarrow 23 \cdot 11 \equiv 1~\textrm{mod}~84\]
+\\[ by \equiv 1 ~\textrm{mod}~a \\]
+\\[ \Rightarrow 23 \cdot 11 \equiv 1~\textrm{mod}~84\\]
 
 <!-- <li> <h3> <u> Using Euler's Totient Function </u> </h3> </li>
 
 Will update later -->
 
-<li> <h3> <u> Using Fermat's Little Theorem </u> </h3> </li>
+### 3. <u> Using Fermat's Little Theorem </u>
 
-See <a href="/2020-05-19-fermats-little-theorem"> Fermat's Little Theorem </a>.
-
-<ol>
+See [Fermat's Little Theorem](./2020-05-19-fermats-little-theorem.md).
