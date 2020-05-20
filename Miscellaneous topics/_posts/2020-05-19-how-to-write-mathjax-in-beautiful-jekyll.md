@@ -71,6 +71,6 @@ You'll find the detailed explanation of the various fields and their uses on <a 
 
 That's all you need to do. You can now start writing latex. 
 
-One thing to look out for is to be careful about writing latex in markdown files. MathJax doesn't support ``\emph``, ``\begin{enumerate} ... \end{enumerate}`` or other text-mode macros or environments. You have to use ``HTML`` to handle such formatting tasks. 
+One thing to look out for is to be careful about writing latex in markdown files. MathJax doesn't support ``\emph``, ``\begin{enumerate} ... \end{enumerate}`` or other text-mode macros or environments. You have to use ``HTML`` or ``markdown`` to handle such formatting tasks. 
 
 If you have any questions, feel free to contact me! 
