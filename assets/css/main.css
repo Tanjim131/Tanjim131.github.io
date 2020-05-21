@@ -108,6 +108,43 @@ img {
   max-width: 100%;
 }
 
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  text-align: center;
+  margin: 20px 0 0 0;
+  /* font-variant: small-caps;
+  font-family: Arial; */
+  font-weight: bold;
+  color: #bb3333;
+}
+
+figure {
+  padding: 5px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+img {
+  transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+}
+
 .disqus-comments {
   margin-top: 1.875rem;
 }
