@@ -848,6 +848,15 @@ code {
   border-radius: 4px;
 }
 
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 pre {
   font-size: 0.9rem;
   line-height: 1.5;
@@ -962,21 +971,6 @@ pre {
   color: #808080;
   font-style: italic;
   font-size: 1rem;
-}
-
-.lemma {
-  display: block;
-  font-style: italic;
-}
-
-.lemma:before {
-  content: "Lemma. ";
-  font-weight: bold;
-  font-style: normal;
-}
-
-.lemma[text]:before {
-  content: "Lemma (" attr(text) ") : ";
 }
 
 html {
