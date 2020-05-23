@@ -116,7 +116,7 @@ class Person{
 
 
 
-Source:
+### Credit:
 1. [Boost](https://www.boost.org/sgi/stl/StrictWeakOrdering.html#1)
 2. [Codearchive](https://github.com/bashrc-real/Codearchive/blob/master/cpp/strict%20weak%20ordering.pdf)
 3. [This medium Article](https://medium.com/@shiansu/strict-weak-ordering-and-the-c-stl-f7dcfa4d4e07)
