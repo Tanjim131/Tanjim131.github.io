@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ICPC",
+        "Loansome",
         "Longrightarrow",
         "bigg",
         "cmath",
@@ -12,11 +13,15 @@
         "iomanip",
         "iostream",
         "linenos",
+        "liquified",
         "longleftarrow",
         "mathcal",
         "recurisve",
         "setprecision",
+        "sstream",
+        "stackexchange",
         "stackrel",
-        "textrm"
+        "textrm",
+        "vect"
     ]
 }
