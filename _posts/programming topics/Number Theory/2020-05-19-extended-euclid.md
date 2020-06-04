@@ -44,5 +44,7 @@ After rearranging terms in (\ref{EEA2}) we'll get,
 
 And so,
 
-\\[ x = y_1\\]
-\\[ y = x_1 - y_1\cdot\floor{\frac{a}{b}} \\]
+\begin{aligned}
+x & = y_1\\\
+y & = x_1 - y_1\cdot\floor{\frac{a}{b}} \\\
+\end{aligned}

@@ -67,7 +67,7 @@ You'll need to include ``<limits>`` to use ``std::numeric_limits``.
 
 ``std::basic_istream<...>::ignore()`` is a function that discards a specified amount of characters until it either finds a delimiter or reaches the end of the stream.``ignore()`` also discards the delimiter if it finds it. The ``max()`` function returns the largest amount of characters that a stream can accept.
 
-This is the signature of ``std::basic_istream<...>::ignore()``. You can call it with zero arguments to discard a single character from the stream, one argument to discard a certain amount of characters, or two arguments to discard count characters or until it reaches delim, whichever one comes first. 
+This is the signature of ``std::basic_istream<...>::ignore()``. You can call it with zero arguments to discard a single character from the stream, one argument to discard a certain amount of characters, or two arguments to discard count characters or until it reaches ``delim``, whichever one comes first. 
 
 You normally use ``std::numeric_limits<std::streamsize>::max()`` as the value of count if you don't know how many characters there are before the delimiter, but you want to discard them anyway.
 

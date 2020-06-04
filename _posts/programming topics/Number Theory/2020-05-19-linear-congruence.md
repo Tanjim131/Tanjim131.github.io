@@ -22,7 +22,7 @@ We have to Solve,
 
 \\[ 17x \equiv 3 ~ (\textrm{mod}\ 29) \\]
 
-As, $17$ and $29$ are coprime, we can divide the congruence on both sides by $17$ to get,
+As, $17$ and $29$ are co-prime, we can divide the congruence on both sides by $17$ to get,
 
 \begin{equation}
     \label{SLC1}
@@ -45,9 +45,12 @@ Refer to [Exponentiation By Squaring](./2020-05-19-exponentiation-by-squaring.md
 
 From \eqref{SLC1}, we then have,
 
-\\[ x \equiv 3\cdot17^{-1} ~(\textrm{mod}~29) \\]
-\\[ x \equiv ((3 ~\textrm{mod}~29) \cdot (17^{-1} ~\textrm{mod}~29)) ~(\textrm{mod}~29)\\]
-\\[ x \equiv 3 \cdot 12 ~(\textrm{mod}~29)\\]
+\begin{eqnarray}
+& & x \equiv 3\cdot17^{-1} ~(\textrm{mod}~29) \nonumber \\\
+& & x  \equiv ((3 ~\textrm{mod}~29) \cdot (17^{-1} ~\textrm{mod}~29)) ~(\textrm{mod}~29) \nonumber \\\
+& & x \equiv  3 \cdot 12 ~(\textrm{mod}~29) \nonumber \\\
+\end{eqnarray}
+
 Finally, 
 \\[ x \equiv 7 ~(\textrm{mod}~29) \\]
 
@@ -65,7 +68,7 @@ We need to find $v$ such that,
 
 \\[ 17v = 1 + 29w\\]
 
-For some $w \in \mathbb{Z}$. Rearranging the eqation we have,
+For some $w \in \mathbb{Z}$. Rearranging the equation we have,
 
 \begin{equation}
     \label{SLCEA2}

@@ -68,15 +68,19 @@ For ease of calculation positive remainder is used.
 
 Therefore, $x = (-3)~\textrm{mod}~23 = (-3) + 23 = 20$.
 
-We can verify that the co-efficients are indeed correct. 
+We can verify that the coefficients are indeed correct. 
 
-\\[ ax \equiv 1 ~\textrm{mod}~b \\]
-\\[ \Rightarrow 84 \cdot 20 \equiv 1~\textrm{mod}~23\\]
+\begin{eqnarray}
+ax & \equiv & 1 ~\textrm{mod}~b \nonumber \\\
+\Rightarrow 84 \cdot 20 & \equiv & 1~\textrm{mod}~23 \nonumber \\\
+\end{eqnarray}
 
 And,
 
-\\[ by \equiv 1 ~\textrm{mod}~a \\]
-\\[ \Rightarrow 23 \cdot 11 \equiv 1~\textrm{mod}~84\\]
+\begin{eqnarray}
+by & \equiv & 1 ~\textrm{mod}~a \nonumber \\\
+\Rightarrow 23 \cdot 11 & \equiv & 1~\textrm{mod}~84 \nonumber \\\
+\end{eqnarray}
 
 <!-- <li> <h3> <u> Using Euler's Totient Function </u> </h3> </li>
 

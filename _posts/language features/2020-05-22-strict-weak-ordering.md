@@ -5,7 +5,7 @@ subtitle:
 tags: [C++]
 ---
 
-Allmost all C++ ``STL`` containers rely on strict weak ordering. For example, when sorting a ``std::vector`` using ``std::sort``, we have to either pass a comparator function or overload the $ < $ operator. For primitive data types like ``int`` or ``double``, we don't need to do this explicitly. But for user-defined data types, we have to do this explicitly. 
+Almost all C++ ``STL`` containers rely on strict weak ordering. For example, when sorting a ``std::vector`` using ``std::sort``, we have to either pass a comparator function or overload the $ < $ operator. For primitive data types like ``int`` or ``double``, we don't need to do this explicitly. But for user-defined data types, we have to do this explicitly. 
 
 ## What is a Strict Weak Ordering ?
 
@@ -58,8 +58,8 @@ if(a < b) return true; // permitted
 if(b < a) return true; // permitted
 if(a > b) return true; // permitted
 if(b > a) return true; // permitted
-if(a <= b) return true; // not permmited
-if(b <= a) return true; // not permmited
+if(a <= b) return true; // not permitted
+if(b <= a) return true; // not permitted
 if(a >= b) return true; // not permitted
 if(b >= a) return true; // not permitted
 if(a < b) return false; // not permitted
@@ -98,7 +98,7 @@ class Person{
 };
 {% endhighlight %}
 
-This will sort the persons first with height, then with age (tiebrekaer betwen persons with same height) and lastly with name (tiebreaker between persons with same height and age).
+This will sort the persons first with height, then with age (tiebreaker between persons with same height) and lastly with name (tiebreaker between persons with same height and age).
 
 If you want a customer ordering, for example (age --> name --> height), then you could just change the ordering of the variables inside ``tie``:
 

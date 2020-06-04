@@ -46,9 +46,11 @@ We also rewrite, \eqref{bz:gcd2} as,
 
 Now we replace, \eqref{bz:gcd4} in \eqref{bz:gcd5},
 
-\\[ 18 = 126 - 2\cdot(432 - 3\cdot126) \\]
-\\[ = 126 - 2\cdot432 + 6\cdot126 \\]
-\\[ = -2\cdot432 + 7\cdot126 \\]
+\begin{aligned}
+18 & = 126 - 2\cdot(432 - 3\cdot126) \\\
+& = 126 - 2\cdot432 + 6\cdot126 \\\
+& = -2\cdot432 + 7\cdot126 \\\
+\end{aligned}
 
 Therefore, $x = -2$ and $ y = 7$.
 
@@ -69,13 +71,17 @@ Where, $432\cdot p$ and $126\cdot q$ will cancel each other out (Opposite signs)
 
 How can we can get an equal quantity my multiplying both $432\cdot p$ and $126\cdot q~?$ We have to choose $p$ and $q$ as such that after multiplying with $432$ and $126$ respectively, it will give $\lcm(432,126)$. Now, $\lcm(432,126) = 3024$. So,
 
-\\[ 432\cdot p = 3024 \\]
-\\[ p = 7 \\]
+\begin{aligned}
+432\cdot p & = 3024 \\\
+p & = 7 \\\
+\end{aligned}
 
 And, as $p$ and $q$ has to be opposite, we get,
 
-\\[ 126\cdot q = -3024 \\]
-\\[ q = -24 \\]
+\begin{aligned}
+126\cdot q & = -3024 \\\
+q & = -24 \\\
+\end{aligned}
 
 So, $(p,q) = (7,-24)$. $(p,q) = (-7,24)$ will also work.  
  
@@ -94,8 +100,11 @@ For any multiples of $\lcm(432,126)$, \eqref{bz:allsol2} becomes,
 
 So, the values of $x$ and $y$ for which the identity holds true, are the solutions to the following system of equations,
 
-\\[ x = -2 + 7m \\]
-\\[ y = 7 - 24m \\]
+
+\begin{aligned}
+x & = -2 + 7m \\\
+y & = 7 - 24m \\\
+\end{aligned}
 
 Where, $m \in \mathbb{Z}$.
 
