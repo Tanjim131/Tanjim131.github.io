@@ -41,13 +41,10 @@ The answer is you can choose either one. Check out this answer:
 
 And this comment:
 
-
 <figure>
 <img src="/assets/img/language_features/using-std-before-c-functions-pic2.png" width="700" height="100" class="center">
 </figure>
 
-
-
-there can be some conflicts for example in case of ``abs`` function. So you're better of using ``std::`` prefixes.  
+There can be some conflicts for example in case of ``abs`` function. So you're better of using ``std::`` prefixes.  
 
 Check out [this stackoverflow answer](https://stackoverflow.com/questions/32606023/when-using-c-headers-in-c-should-we-use-functions-from-std-or-the-global-na) which discusses the topic in great detail.
