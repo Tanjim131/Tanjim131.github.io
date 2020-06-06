@@ -11,32 +11,11 @@ In ``C++``, you can take an input of whitespace separated string through ``std::
 
 The problem is demonstrated in the following example:
 
-{% highlight C++ linenos %}
-
-#include <iostream>
-
-int main(){
-    int age;
-    std::string name;
-    std::cout << "Enter your age: ";
-    std::cin >> age;
-    std::cout << "Enter you name: ";
-    std::getline(std::cin, name);
-
-    std::cout << "Your name is: " << name << " & your age is: " << age << '\n';
-    return 0;
-}
-
-{% endhighlight %}
+{% gist 4926d2e81050939e8a669454ba9ac1bd problem.cpp %}
 
 The output:
 
-{% highlight C++ linenos %}
-
-Enter your age: 25
-Enter you name: Your name is:  & your age is: 25                                
-
-{% endhighlight %}
+{% gist 4926d2e81050939e8a669454ba9ac1bd output.txt %}
 
 The ``name`` did not print because ``std::getline`` saw the newline character left from ``std::cin`` as leading whitespace. If you enter the name as ``ABC``, an implicit newline character will be appended at the end. So, the ``name`` variable becomes ``ABC\n``. ``std::getline`` sees this newline and stops reading!
 
@@ -44,24 +23,7 @@ The ``name`` did not print because ``std::getline`` saw the newline character le
 
 We can consume the trailing newline character left by ``std::cin`` before calling ``std::getline``. This can be done by using ``std::cin.ignore()`` to discard the rest of the input until we reach a fresh new line:
 
-{% highlight C++ linenos %}
-
-#include <iostream>
-#include <limits>
-
-int main(){
-    int age;
-    std::string name;
-    std::cout << "Enter your age: ";
-    std::cin >> age;
-    std::cout << "Enter you name: ";
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    std::getline(std::cin, name);
-    std::cout << "Your name is: " << name << " & your age is: " << age << '\n';
-    return 0;
-}
-
-{% endhighlight %}
+{% gist 4926d2e81050939e8a669454ba9ac1bd solution.cpp %}
 
 You'll need to include ``<limits>`` to use ``std::numeric_limits``. 
 

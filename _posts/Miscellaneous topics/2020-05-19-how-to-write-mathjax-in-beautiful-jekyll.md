@@ -15,11 +15,7 @@ I used mathjax version 3.0 for writing latex. One of the nice things about beaut
 To start, we'll look at the `_config.yml`  file. YAML files contains fields as ``name:value`` pair.
 Scroll down to the end until you find ``markdown`` field. It should be set to `kramdown`. A few lines below that you should find:
 
-{% highlight yaml linenos %}
-kramdown:
-  input: GFM
-  math_engine: mathjax # you can also set this field to 'katex'
-{% endhighlight %}
+{% gist 1fbd8d5629e2d62135340f5ae85d4585 latex.yml %}
 
 The ``input`` field should be set to ``GFM``. You just have to add ``math_engine: mathjax``. 
 
@@ -27,48 +23,7 @@ That's all there is to tweak in the ``_config`` file.
 
 Now browse to ``/_includes/head.html``. At the bottom of the page, before the ``</head>`` tag, add the following lines:
 
-{% highlight javascript linenos %}
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"> </script>
-
-<script>
-MathJax = {
-    loader: {load: ['[tex]/newcommand', '[tex]/color']},
-    tex: {
-        packages: {'[+]': ['newcommand', 'color']},
-        inlineMath: [['$','$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'],['\\[', '\\]']],
-        macros: {
-            bold: ['{\\bf #1}',1],
-            ddfrac: ['{\\frac{\\displaystyle #1}{\\displaystyle #2}}', 2],
-            abs: ['\\left\\lvert #2 \\right\\rvert_{\\text{#1}}', 2, ""],
-            floor: ['\\left\\lfloor #2 \\right\\rfloor_{\\text{#1}}', 2, ""],
-            sfrac: ['{ \\frac {\\ #1 \\ }{#2}}', 2],
-            lcm: ['\\operatorname{lcm}#1', 1]
-        },
-        processEscapes: true,
-        processEnvironments: true,
-        processRefs: true,
-        digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
-        tags:  'ams',
-        tagSide: 'right',
-        tagIndent: '0.8em', 
-        useLabelIds: true,  
-        multlineWidth: '85%',
-    },
-    chtml: {
-        scale: 1.2
-    },
-    svg: {
-        scale: 1.3
-    }
-};
-</script>
-
-<script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-
-{% endhighlight %}
+{% gist 1fbd8d5629e2d62135340f5ae85d4585 latex.js %}
 
 You'll find the detailed explanation of the various fields and their uses on [MathJax 3.0 Documentation](http://docs.mathjax.org/en/latest/). I won't bother you with the details here. 
 

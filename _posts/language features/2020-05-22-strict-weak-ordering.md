@@ -43,78 +43,29 @@ One example can be given where the 3rd invariant is violated. For example in roc
 If you don't correctly implement your comparator or don't overload $<$ correctly, your code could either crash or run into an infinite loop. Either way you are in unchartered waters. For example if you write the following:
 
 
-{% highlight C++ linenos %}
-bool operator < (int a, int b){                                             
-    if(a < b) return false; 
-}
-{% endhighlight %}
+{% gist 81d4cdd23c02522e9bece9f5b48e0226 problem.cpp %}
 
 Then, you're essentially saying to return true if $a >= b$. This breaks the irreflexivity invariant. For example, $ a \geq a $ should return ``false``, but in this case it's returning ``true``.
 
 I've listed the possible scenarios below:
 
-{% highlight C++ linenos %}
-if(a < b) return true; // permitted                                       
-if(b < a) return true; // permitted
-if(a > b) return true; // permitted
-if(b > a) return true; // permitted
-if(a <= b) return true; // not permitted
-if(b <= a) return true; // not permitted
-if(a >= b) return true; // not permitted
-if(b >= a) return true; // not permitted
-if(a < b) return false; // not permitted
-if(b < a) return false; // not permitted
-if(a > b) return false; // not permitted
-if(b > a) return false; // not permitted
-if(a <= b) return false; // permitted
-if(b <= a) return false; // permitted
-if(a >= b) return false; // permitted
-if(b >= a) return false; // permitted
-{% endhighlight %}
+{% gist 81d4cdd23c02522e9bece9f5b48e0226 scenarios.cpp %}
 
 ## Correctly overloading $<$ operator
 
 The only way to be perfectly sure that your comparator function is valid is to mathematically prove that it meets the requirement of strict weak ordering. One neat trick is using the ``std::tie`` method to create a ``std::tuple`` and then use it's $<$ operator which is known to behave correctly. Suppose the following ``class`` is defined:
 
-{% highlight C++ linenos %}
-class Person{                                                               
-    int height;
-    int age;
-    std::string name;
-};
-{% endhighlight %}
+{% gist 81d4cdd23c02522e9bece9f5b48e0226 person.cpp %}
 
 Then the $<$ operator can be overloaded in the following manner:
 
-{% highlight C++ linenos %}
-class Person{                                                               
-    int height;
-    int age;
-    std::string name;
-
-    bool operator < (const Person &person) const{
-        return tie(height, age, name) < tie(person.height, person.age, person.name);
-    }
-};
-{% endhighlight %}
+{% gist 81d4cdd23c02522e9bece9f5b48e0226 person-operator-overload.cpp %}
 
 This will sort the persons first with height, then with age (tiebreaker between persons with same height) and lastly with name (tiebreaker between persons with same height and age).
 
 If you want a customer ordering, for example (age --> name --> height), then you could just change the ordering of the variables inside ``tie``:
 
-{% highlight C++ linenos %}
-class Person{                                                               
-    int height;
-    int age;
-    std::string name;
-
-    bool operator < (const Person &person) const{
-        return tie(age, name, height) < tie(person.age, person.name, person.height);
-    }
-};
-{% endhighlight %}
-
-
+{% gist 81d4cdd23c02522e9bece9f5b48e0226 tie.cpp %}  
 
 ### Credit:
 1. [Boost](https://www.boost.org/sgi/stl/StrictWeakOrdering.html#1)

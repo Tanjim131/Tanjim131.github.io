@@ -9,28 +9,11 @@ There are tons of ``C`` functions available in ``C++``. There's one that known t
 
 Now given that, ``printf`` is declared in ``cstdio``, the ``C++`` version of ``stdio.h``, should you use ``printf`` like this:
 
-{% highlight C++ linenos %}
-#include <iostream>
-
-int main()
-{
-  printf("Hello World!\n");                                                   
-  return 0;
-}
-{% endhighlight %}
+{% gist b742cad28edcccd166fa93845fde6053 test-1.cpp %}
 
 Or like this:
 
-{% highlight C++ linenos %}
-#include <iostream>
-#include <cstdio>
-
-int main()
-{
-  std::printf("Hello World!\n");                                              
-  return 0;
-}
-{% endhighlight %}
+{% gist b742cad28edcccd166fa93845fde6053 test-2.cpp %}
 
 
 The answer is you can choose either one. Check out this answer:

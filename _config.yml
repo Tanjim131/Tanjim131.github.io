@@ -201,6 +201,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-gist
 
 relative_links:
   enabled:     true
