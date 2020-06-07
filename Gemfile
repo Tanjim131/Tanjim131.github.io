@@ -6,4 +6,5 @@ gemspec
 
 gem 'jekyll-relative-links'
 gem 'jekyll-gist'
+gem 'jekyll-feed'
 

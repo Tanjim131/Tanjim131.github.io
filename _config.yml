@@ -21,6 +21,7 @@ navbar-links:
   Category: "tags"
   #Resume | CV: "resume/Tanjim Bin Faruk.pdf"
   #Resume | CV: "<google drive link>"
+  Subscribe: "subscribe"
   Credits: "credits"
 
 # --- Logo --- #
@@ -202,6 +203,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-gist
+  - jekyll-feed
 
 relative_links:
   enabled:     true
