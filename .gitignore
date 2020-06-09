@@ -12,9 +12,3 @@ Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
 *.vscode
-*.yml
-*.md
-*.pdf
-assets/
-_includes/
-*.html

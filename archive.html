@@ -1,0 +1,42 @@
+---
+layout: page
+title: 'Archive'
+---
+
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
+<ul>
+<div id = "full-tags-list">
+    {% for year in postsByYear %}
+        <h2 id="{{- tag -}}" class="linked-section">
+            <i class="fas fa-tag" aria-hidden="true"></i>
+            &nbsp;{{- year.name -}}&nbsp;({{year.size}})
+        </h2>
+        {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}  
+        <ul>
+        {% for month in postsByMonth %}
+            <li>
+            <h2 id="{{- tag -}}" class="linked-section">
+                &nbsp;{{- month.name -}}&nbsp;({{month.size}})
+            </h2>
+            </li>
+        <ul>
+        <div class="post-list">
+            {% for post in month.items %}
+            <li>
+            <div class="tag-entry">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <div class="entry-date">
+                        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                    </div>
+            </div>
+            </li>
+            {% endfor %}
+        </div>
+        </ul>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>
+</ul>
