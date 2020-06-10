@@ -75,7 +75,7 @@ calls to ``faceup(C)``. The $2$ at the front specifies that at each step you're 
 
 <figure>
 <img src="/assets/img/programming_topics/fun-with-cards-part1-pic1.png" width="800" height="450" class="center">
-<figcaption> The second setup </figcaption>  
+<figcaption> Worst case setup for naive approach </figcaption>  
 </figure>
 
 So we've established an upper bound and this will pass the time limit for subtask $1$. 
