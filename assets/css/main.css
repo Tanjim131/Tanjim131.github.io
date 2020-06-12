@@ -3,8 +3,7 @@ layout: null
 ---
 
 @import url("pygment_highlights.css");
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* --- General --- */
 
@@ -13,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Exo 2', 'Times New Roman', 'Lora', 'Kalpurush', serif, sans-serif;
+  font-family: 'Open Sans', 'Times New Roman', 'Lora', 'Kalpurush', serif, sans-serif;
   font-size: 1.125rem;
   color: #404040;
   position: relative;
