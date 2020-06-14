@@ -88,3 +88,9 @@ Using $f(H^\prime)$ and $f(H^\prime - 1)$ we can follow a similar reasoning to d
 As we've proved $f(H)$ is increasing up to $\floor{\ddfrac{N}{2}}$ or $\ceil{\ddfrac{N}{2}}$ and the values of $f(H)$ are symmetric, so we can conclude that the function is decreasing beyond $\ceil{\ddfrac{N}{2}}$. It can also be seen by calculating the inequality $f(H^\prime + 1) \leq f(H^\prime)$ or $f(H^\prime) \leq f(H^\prime - 1)$. 
 
 So the maximum value of $f(H)$ occurs at $\floor{\ddfrac{N}{2}}$ or $\ceil{\ddfrac{N}{2}}$. 
+
+### Useful links:
+- [Binomial Coefficient Properties](https://en.wikipedia.org/wiki/Binomial_coefficient#Binomial_coefficients_as_polynomials)
+- [This Stackexchange Question](https://math.stackexchange.com/questions/823693/prove-that-binom-nk-frac-n-n-kk-viewed-as-a-function-of-k)
+- [Another Stackexchange Question](https://math.stackexchange.com/questions/722952/how-do-you-prove-n-choose-k-is-maximum-when-k-is-lceil-tfrac-n2-rcei)
+- [Yet Another Stackexchange Question](https://math.stackexchange.com/questions/3717719/find-the-condition-where-the-product-of-two-factorials-is-minimized)
