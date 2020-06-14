@@ -66,7 +66,7 @@ Kernighan's algorithm perform this operation at each step until $n$ becomes $0$.
 
 ***Time Complexity***: As in each iteration the algorithm unset the rightmost set bit, the algorithm runs as many iterations as there are set bits. We know that a number $n$ has exactly $\floor{log_2(n)} + 1$ bits in base $2$. In the worst case, all the bits in $n$ are $1$ and so the running time becomes $\mathcal{O}(\log_2(n))$. The algorithm performs better when most bits in $x$ are $0$. 
 
-Bonus: checking power of $2$ 
+***Bonus***: We can actually check if a number is a power of $2$ using this approach. Observe that if a number $n$ is a power of $2$, i.e. if $n = 2^k$ where $k \in \mathbb{N}$, then the $n$ has only one bit set in its binary representation. Now if we subtract $1$ from $n$, then $n - 1$ will have all its bits flipped from the rightmost bit's position in $n$. For example $n = (8)\_{10} = (1000)\_{2}$ and $n - 1 = (7)\_{10} = (0111)_{2}$. So if we and $n$ and $n - 1$, then the result will be $0$. There is no other number with this property. 
 
 ### 4. Using Built-in Functions of Compiler
 
@@ -132,3 +132,10 @@ Also notice that there's nothing special about processing a nibble at each step.
 Notice that the lookup based approach is unbeatable is the table is in cache. But cache isn't very large and so you can't store large lookup tables in cache. Also if a cache miss takes $200$ cycles to fetch data from main memory and the CPU will stall. So there's a tradeoff. [[Source](https://stackoverflow.com/questions/109023/how-to-count-the-number-of-set-bits-in-a-32-bit-integer#comment32510_131212)]
 
 There are other obscure approaches like [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) explained [here](https://stackoverflow.com/a/29621923/7261925) and [here](https://stackoverflow.com/a/15979139/7261925) and [Hacker's Delight](https://books.google.com.bd/books?id=iBNKMspIlqEC&pg=PA66&redir_esc=y&hl=en#v=onepage&q&f=false). But I'll leave them aside and they require much more effort to understand and are not really readable at first glance.  
+
+***Note***: I've tried to cite the various sources that I've collected the information and approaches from. Please let me know if I've missed something. Also, if you are confused with what approach to follow the following comment will help you:
+
+<figure>
+<img src="/assets/img/programming_topics/count-number-of-bits-pic1.png" width="1500" height="350" class="center">
+<figcaption> Suggestion regarding which implementation to use </figcaption>  
+</figure>
