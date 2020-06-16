@@ -1,22 +1,5 @@
-<div class="sticky-container">
-    <ul class="sticky">
-        <li>
-            <img width="32" height="32" title="" alt="" src="{{site.baseurl}}/assets/img/social/fb.svg" />
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
-            <p> Facebook </p>
-            </a>
-        </li>
-        <li>
-            <img width="32" height="32" title="" alt="" src="{{site.baseurl}}/assets/img/social/twitter.svg" />
-            <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}">
-            <p> Twitter </p>
-            </a>	
-        </li>
-        <li>
-            <img width="32" height="32" title="" alt="" src="{{site.baseurl}}/assets/img/social/linkedin.svg" />
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}">
-            <p> Linkedin </p>
-            </a>	
-        </li>       
-    </ul>
+<div class = "sticky-container">
+    <a href = "https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class = "facebook">  <i class="fab fa-facebook"></i> facebook  </a>
+    <a href = "https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}" class = "twitter">  <i class="fab fa-twitter"></i> twitter  </a>
+    <a href = "https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" class = "linkedin"> <i class="fab fa-linkedin-in"></i> linkedin  </a>
 </div>

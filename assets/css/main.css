@@ -46,10 +46,6 @@ h4 {
 a {
   color: {{ site.link-col | default: "#008AFF" }};
 }
-a:hover,
-a:focus {
-  color: {{ site.hover-col | default: "#0085A1" }};
-}
 blockquote {
   color: #808080;
   font-style: italic;
