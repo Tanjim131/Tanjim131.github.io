@@ -4,7 +4,7 @@ title: Maximum Value of nCr
 tags: [Combinatorics]
 ---
 
-The number of ways we can choose $H$ objects from $N$ objects where the order doesn't matter is expressed by ${N \choose H}$ where $N,H$ are integers and $N > 0$, $0 \leq H \leq N$. We're interested in finding the maximum value of ${N \choose H}$. 
+The number of ways we can choose $H$ objects from $N$ objects where the order doesn't matter is expressed by $\displaystyle{N \choose H}$ where $N,H$ are integers and $N > 0$, $0 \leq H \leq N$. We're interested in finding the maximum value of $\displaystyle{N \choose H}$.
 
 Recall that,
 
@@ -13,7 +13,7 @@ Recall that,
 {N \choose H} = {N \choose N - H}
 \end{eqnarray}
 
-We'll first prove that the values of $f(H) = {N \choose H}$ are symmetric with respect to $\floor{\ddfrac{N}{2}}$ and $\ceil{\ddfrac{N}{2}}$ for a fixed value of $N$. (This is also visible from [Pascal's Triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle)).
+We'll first prove that the values of $f(H) = \displaystyle{N \choose H}$ are symmetric with respect to $\floor{\ddfrac{N}{2}}$ and $\ceil{\ddfrac{N}{2}}$ for a fixed value of $N$. (This is also visible from [Pascal's Triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle)).
 
 If $N$ is even, then we have only one value (namely, $\ddfrac{N}{2}$) with respect to which $f(H)$ is symmetric. If $H = \ddfrac{N}{2}$, then $N - H = \ddfrac{N}{2}$. Here, $f\left(\floor{\ddfrac{N}{2}}\right) = f\left(\ceil{\ddfrac{N}{2}}\right) = f(\ddfrac{N}{2})$
 

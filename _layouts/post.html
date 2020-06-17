@@ -36,6 +36,8 @@ layout: base
         {{ content }}
       </article>
 
+      <br>
+      
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags:
@@ -48,7 +50,7 @@ layout: base
           {% endif %}
         </div>
       {% endif %}
-
+      
       {% if page.social-share %}
         {% include social-share.html %}
       {% endif %}

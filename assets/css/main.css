@@ -14,6 +14,7 @@ html {
 body {
   font-family: 'Open Sans', 'Times New Roman', 'Lora', 'Kalpurush', serif, sans-serif;
   font-size: 1.125rem;
+  text-align: justify;
   color: #404040;
   position: relative;
   background-color: {{ site.page-col | default: "#FFFFFF" }};
@@ -496,7 +497,9 @@ footer .footer-custom-content {
 
 .post-preview .post-title {
   font-size: 1.875rem;
+  text-align: left;
   margin-top: 0;
+  color: #0A52A4;
 }
 .post-preview .post-subtitle {
   margin: 0;
@@ -537,7 +540,7 @@ footer .footer-custom-content {
 }
 .post-preview .post-read-more {
   font-weight: 800;
-  color: red;
+  color: crimson;
 }
 
 @media (min-width: 768px) {
@@ -596,6 +599,7 @@ footer .footer-custom-content {
 .intro-header {
   margin: 5rem 0 1.25rem;
   position: relative;
+  text-align: left;
 }
 .intro-header.big-img {
   background: no-repeat center center;
