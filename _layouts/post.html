@@ -55,6 +55,17 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
+      <div id="hyvor-talk-view"></div>
+      <script type="text/javascript">
+          var HYVOR_TALK_WEBSITE = 948; // DO NOT CHANGE THIS
+          var HYVOR_TALK_CONFIG = {
+              url: '{{ page.url | absolute_url }}',
+              id: '{{page.id}}',
+              loadMode: "scroll"
+          };
+      </script>
+      <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
@@ -70,16 +81,4 @@ layout: base
       {% include comments.html %}
     </div>
   </div>
-
-  <div id="hyvor-talk-view"></div>
-  <script type="text/javascript">
-      var HYVOR_TALK_WEBSITE = 948; // DO NOT CHANGE THIS
-      var HYVOR_TALK_CONFIG = {
-          url: '{{ page.url | absolute_url }}',
-          id: '{{page.id}}',
-          loadMode: "scroll"
-      };
-  </script>
-  <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
-
 </div>
