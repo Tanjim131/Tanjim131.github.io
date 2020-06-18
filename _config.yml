@@ -204,6 +204,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-gist
   - jekyll-feed
+  - jekyll-archives
 
 relative_links:
   enabled:     true
