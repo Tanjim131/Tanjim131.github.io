@@ -561,12 +561,15 @@ footer .footer-custom-content {
 .blog-tags a {
   color: {{ site.link-col | default: "#008AFF" }};
   text-decoration: none;
+  font-weight: 550;
+  background-color: #DAF7A6;
   padding: 0 0.3125rem;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: salmon;
+  color: {{ site.hover-col | default: "#0085A1" }};
+  background-color: #B3E0F0; 
 }
 
 .post-preview .blog-tags {
