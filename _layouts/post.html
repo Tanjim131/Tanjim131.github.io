@@ -48,13 +48,12 @@ layout: base
       
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
-          <i class="fas fa-tag"></i> <b> Tags: </b>
-          {% if site.link-tags %}
+          <span> <i class="fas fa-tag"></i> <b> Tags: </b> </span>
           {% for tag in page.tags %}
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
         </div>
-      {% endif %}
+      {% endif %}         
 
       {% if page.after-content %}
         <div class="after-content">
