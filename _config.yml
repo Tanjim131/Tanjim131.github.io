@@ -1,4 +1,7 @@
-# --- Basic options --- #
+# Welcome to Beautiful Jekyll!
+# This config file is meant for settings that affect your entire website. When you first
+# set up your website you should go through all these settings and edit them, but after
+# the initial set up you won't need to come back to this file often.
 
 # Name of website
 title: Tanjim Bin Faruk
@@ -33,16 +36,15 @@ avatar: "/assets/img/site_pictures/avatar_img.jpg"
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
-# If you want to have an image logo in the top-left corner instead of the title text,
+# If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 # title-img: "/assets/img/avatar-icon.png"
 
 
-# --- Footer options --- #
+# --- Footer social media links --- #
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
-# If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "tanjim.cse15@gmail.com"
   facebook: tanjim131
@@ -50,6 +52,10 @@ social-network-links:
   linkedin: tanjimbinfaruk
   stackoverflow: "7261925/robur-131"
 #  telephone: +880-1535518547
+
+# If you want to show a link to an RSS in the footer, add the site description here.
+# If you don't want to show an RSS link, remove the following line.
+rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
@@ -70,33 +76,54 @@ link-tags: true
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 25
 
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# The keywords to associate with your website, for SEO purposes
+#keywords: "my,list,of,keywords"
+
 # --- Colours / background image --- #
 
-# Personalize the colors in your website. Colour values can be any valid CSS colour
+# Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
-navbar-border-col: "#EAEAEA"
+navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
+text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
-footer-col: "#F5F5F5"
+footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
-# Alternatively, the navbar, footer, and page background can be set to use background images
+# Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
 navbar-img: "/assets/img/site_pictures/navbar_img.jpg"
 footer-img: "/assets/img/site_pictures/footer_img.jpg"
 page-img: "/assets/img/site_pictures/page_img.jpg"
 
-# --- Web Statistics Section --- #
+# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+#mobile-theme-col: "#0085A1"
+
+# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+#site-css:
+#  - "/assets/css/custom-styles.css"
+
+# If you have common JavaScript files that should be included in every page, list them here
+#site-js:
+#  - "/assets/js/custom-script.js"
+
+# --- Web Analytics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
 #gtag: ""
 
-# Fill in your Google Analytics ID to track your website using GA
+# Fill in your Google Analytics ID to track your website using Google Analytics
 #google_analytics: ""
 
 # Google Tag Manager ID
@@ -137,23 +164,18 @@ page-img: "/assets/img/site_pictures/page_img.jpg"
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance) 
+#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
 #    siteKey  : # Use your own site key, you need to apply for one on Google
 #    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
-
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
 #fb_app_id: ""
-
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
@@ -183,10 +205,9 @@ defaults:
       show-avatar: false
   -
     scope:
-      path: "" # all files
+      path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
-      show-avatar: true
 
 # Exclude these files from production site
 exclude:
