@@ -46,9 +46,9 @@ Refer to [Exponentiation By Squaring](./2020-05-19-exponentiation-by-squaring.md
 From \eqref{SLC1}, we then have,
 
 \begin{eqnarray}
-& & x \equiv 3\cdot17^{-1} ~(\textrm{mod}~29) \nonumber \\\
-& & x  \equiv ((3 ~\textrm{mod}~29) \cdot (17^{-1} ~\textrm{mod}~29)) ~(\textrm{mod}~29) \nonumber \\\
-& & x \equiv  3 \cdot 12 ~(\textrm{mod}~29) \nonumber \\\
+& & x \equiv 3\cdot17^{-1} ~(\textrm{mod}~29) \nonumber \newline
+& & x  \equiv ((3 ~\textrm{mod}~29) \cdot (17^{-1} ~\textrm{mod}~29)) ~(\textrm{mod}~29) \nonumber \newline
+& & x \equiv  3 \cdot 12 ~(\textrm{mod}~29) \nonumber \newline
 \end{eqnarray}
 
 Finally, 

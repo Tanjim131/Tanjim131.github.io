@@ -8,25 +8,25 @@ Oftentimes when we're dealing with a number, we're interested in knowing the num
 
 \\[
 \begin{array}{|c|c|c|}
-\\hline
-  \text{A} & \text{B} & \text{A} \oplus \text{B} \\\ 
-\\hline
-   0 & 0 & 0 \\\
-\\hline
-   0 & 1 & 0 \\\
-\\hline
-   1 & 0 & 0 \\\ 
-\\hline
-   1 & 1 & 1 \\\
-\\hline
+\hline
+  \text{A} & \text{B} & \text{A} \oplus \text{B} \newline 
+\hline
+   0 & 0 & 0 \newline
+\hline
+   0 & 1 & 0 \newline
+\hline
+   1 & 0 & 0 \newline 
+\hline
+   1 & 1 & 1 \newline
+\hline
 \end{array}
 \\]
 
 So the output of $XOR$ operation is $1$ when the bits are different and $0$ otherwise. Let's look at an example. Say, $A = 1001011101$ and $B = 0111000100$ are two bit strings of length $10$. Following is the $XOR$ operation of them:
 
 \begin{aligned}
-\large{A} & = \Large{1001011101} \\\
-\large{B} & = \Large{\underline{0111000100}}\\\
+\large{A} & = \Large{1001011101} \newline
+\large{B} & = \Large{\underline{0111000100}} \newline
 \large{A \oplus B} & = \Large{1110011001}
 \end{aligned}
 

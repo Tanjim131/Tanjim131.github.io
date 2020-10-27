@@ -13,10 +13,10 @@ What is the largest number of length $i$? All of $i$ digits are $9$ in the large
 Now that we've established the smallest and the largest number of length $i$, we can now compute the range. 
 
 \begin{eqnarray}
-\textrm{range(i)} & = & \textrm{largest number} - \textrm{smallest number} + 1 \nonumber \\\
-& = & (10^i - 1) - (10^{i - 1}) + 1 \nonumber \\\
-& = & 10^i - 10^{i - 1} \nonumber \\\
-& = & 10^{i - 1}(10 - 1) \nonumber \\\
+\textrm{range(i)} & = & \textrm{largest number} - \textrm{smallest number} + 1 \nonumber \newline
+& = & (10^i - 1) - (10^{i - 1}) + 1 \nonumber \newline
+& = & 10^i - 10^{i - 1} \nonumber \newline
+& = & 10^{i - 1}(10 - 1) \nonumber \newline
 & = & 9 \times 10^{i - 1}
 \end{eqnarray}
 

@@ -31,8 +31,8 @@ Let, $M = \ddfrac{N}{2}$. We let $H = M - K$ such that $0 \leq K \leq M$. When $
 From \eqref{binomial1}, we have $f(H) = f(N - H)$. For case $(1)$, 
 
 \begin{eqnarray}
-f(H) & = & f(N - H) \nonumber \\\
-\implies f(M - K) & = & f(N - M + K) \nonumber \\\
+f(H) & = & f(N - H) \nonumber \newline
+\implies f(M - K) & = & f(N - M + K) \nonumber \newline
 \label{binomial2}
 \implies f(M - K) & = & f(M + K)
 \end{eqnarray}
@@ -42,8 +42,8 @@ f(H) & = & f(N - H) \nonumber \\\
 For case $(2)$,
 
 \begin{eqnarray}
-f(H) & = & f(N - H) \nonumber \\\
-\implies f(M - K) & = & f(N - M + K) \nonumber \\\
+f(H) & = & f(N - H) \nonumber \newline
+\implies f(M - K) & = & f(N - M + K) \nonumber \newline
 \label{binomial3}
 \implies f(\floor{\ddfrac{N}{2}} - K) & = & f(\ceil{\ddfrac{N}{2}} + K)
 \end{eqnarray}
@@ -53,8 +53,8 @@ From \eqref{binomial3}, when $K = 0$, we have $f(\floor{\ddfrac{N}{2}}) = f(\cei
 For case $(3)$,
 
 \begin{eqnarray}
-f(H) & = & f(N - H) \nonumber \\\
-\implies f(M - K) & = & f(N - M + K) \nonumber \\\
+f(H) & = & f(N - H) \nonumber \newline
+\implies f(M - K) & = & f(N - M + K) \nonumber \newline
 \label{binomial4}
 \implies  f(\ceil{\ddfrac{N}{2}} - K) & = & f(\floor{\ddfrac{N}{2}} + K)
 \end{eqnarray}
@@ -64,8 +64,8 @@ From \eqref{binomial4}, when $K = 0$, we have $f(\ceil{\ddfrac{N}{2}}) = f(\floo
 Case $(2)$ and $(3)$ are basically same. As $\ceil{\ddfrac{N}{2}} = \floor{\ddfrac{N}{2}} + 1$, we could've replaced this identity in \eqref{binomial3} and derived at \eqref{binomial4},
 
 \begin{eqnarray}
-f(\ceil{\ddfrac{N}{2}} - K - 1) & = & f(\floor{\ddfrac{N}{2}} + K + 1) \nonumber \\\
-\implies f(\ceil{\ddfrac{N}{2}} - (K + 1)) & = & f(\floor{\ddfrac{N}{2}} + (K + 1)) \\\
+f(\ceil{\ddfrac{N}{2}} - K - 1) & = & f(\floor{\ddfrac{N}{2}} + K + 1) \nonumber \newline
+\implies f(\ceil{\ddfrac{N}{2}} - (K + 1)) & = & f(\floor{\ddfrac{N}{2}} + (K + 1)) \newline
 \end{eqnarray}
 
 So in cases $(2)$ and $(3)$, where $N$ is odd, we have $f(H)$ is symmetric with respect to $\floor{\ddfrac{N}{2}}$ and $\ceil{\ddfrac{N}{2}}$. 
@@ -73,13 +73,13 @@ So in cases $(2)$ and $(3)$, where $N$ is odd, we have $f(H)$ is symmetric with 
 Now that we've shown $f(H)$ to be symmetric, we'll prove that $f(H)$ increases monotonically (non-decreasing) in the range $0 \leq H \leq \floor{\ddfrac{N}{2}}$ or $0 \leq H \leq \ceil{\ddfrac{N}{2}}$. To prove this, we take to consecutive terms $f(H^\prime)$ and $f(H^\prime + 1)$ and observe that in order to make $f(H)$ monotonically increasing, we must have,
 
 \begin{eqnarray}
-f(H^\prime + 1) & \geq & f(H^\prime) \nonumber \\\
-\implies {N \choose H^\prime + 1} & \geq & {N \choose H^\prime} \nonumber \\\
-\implies \ddfrac{N \choose H^\prime + 1}{N \choose H^\prime} & \geq & 1 \nonumber \\\
-\implies \ddfrac{\cancel{N!}~H^\prime!~(N - H^\prime)!}{(H^\prime + 1)!~(N - H^\prime - 1)!~\cancel{N!}} & \geq & 1 \nonumber \\\
-\implies \ddfrac{\cancel{H^\prime!}~(N - H^\prime)~\cancel{(N - H^\prime - 1)!}}{(H^\prime + 1)~\cancel{H^\prime!}\cancel{(N - H^\prime - 1)!}} & \geq & 1 \nonumber \\\
-\implies \ddfrac{N - H^\prime}{H^\prime + 1} & \geq & 1 \nonumber \\\
-\implies H^\prime & \leq & \ddfrac{N - 1}{2} \nonumber \\\
+f(H^\prime + 1) & \geq & f(H^\prime) \nonumber \newline
+\implies {N \choose H^\prime + 1} & \geq & {N \choose H^\prime} \nonumber \newline
+\implies \ddfrac{N \choose H^\prime + 1}{N \choose H^\prime} & \geq & 1 \nonumber \newline
+\implies \ddfrac{\cancel{N!}~H^\prime!~(N - H^\prime)!}{(H^\prime + 1)!~(N - H^\prime - 1)!~\cancel{N!}} & \geq & 1 \nonumber \newline
+\implies \ddfrac{\cancel{H^\prime!}~(N - H^\prime)~\cancel{(N - H^\prime - 1)!}}{(H^\prime + 1)~\cancel{H^\prime!}\cancel{(N - H^\prime - 1)!}} & \geq & 1 \nonumber \newline
+\implies \ddfrac{N - H^\prime}{H^\prime + 1} & \geq & 1 \nonumber \newline
+\implies H^\prime & \leq & \ddfrac{N - 1}{2} \nonumber \newline
 \implies H^\prime & \leq & \floor{\ddfrac{N}{2}}
 \end{eqnarray}
 

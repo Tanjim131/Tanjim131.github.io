@@ -28,12 +28,12 @@ So the set of all divisors of $2015$ comprises $d = \\{5, 13, 65, 155, 403, 2015
 Only the members of $d$ have a $\gcd > 1$ with $2015$. What are the possible $\gcd$s $ > 1 $? Let us list them:
 
 \begin{eqnarray}
-\gcd(5, 2015) & = & 5 \nonumber \\\
-\gcd(13, 2015) & = & 13 \nonumber \\\
-\gcd(31, 2015) & = & 31 \nonumber \\\
-\gcd(65, 2015) & = & 65 & = & 5 * 13 \nonumber \\\
-\gcd(155, 2015) & = & 155 & = & 5 * 31 \nonumber \\\
-\gcd(403, 2015) & = & 403 & = & 13 * 31 \nonumber \\\
+\gcd(5, 2015) & = & 5 \nonumber \newline
+\gcd(13, 2015) & = & 13 \nonumber \newline
+\gcd(31, 2015) & = & 31 \nonumber \newline
+\gcd(65, 2015) & = & 65 & = & 5 * 13 \nonumber \newline
+\gcd(155, 2015) & = & 155 & = & 5 * 31 \nonumber \newline
+\gcd(403, 2015) & = & 403 & = & 13 * 31 \nonumber \newline
 \gcd(2015, 2015) & = & 2015 & = &  5 * 13 * 31 \nonumber
 \end{eqnarray}
 
@@ -60,11 +60,11 @@ So from $1$ to $2015$ there are $403 + 155 + 65 - 31 - 13 - 5 + 1 = 575 $ number
 Finally we can now plug in the numbers to find the answer,
 
 \begin{aligned}
-\sum_{x = 1}^{2015} \gcd(x, 2015)    & = \gcd(5,2015) * 360 + \gcd(13,2015) * 120 + \gcd(31,2015) * 48 \\\ 
-                                        & \quad + \gcd(65, 2015) * 30 + \gcd(155,2015) * 12 + \gcd(403,2015) * 4 \\\
-                                        & \quad + \gcd(2015, 2015) * 1 + \sum_{x \not\in \\{5,13,31,65,155,403,2015\\}}\gcd(x,2015) * 1440 \\\
-                                    & = 5 * 360 + 13 * 120 + 31 * 48 + 65 * 30 + 155 * 12 + 403 * 4 \\\
-                                        & \quad + 2015 * 1 + 1 * 1440 \\\
+\sum_{x = 1}^{2015} \gcd(x, 2015)    & = \gcd(5,2015) * 360 + \gcd(13,2015) * 120 + \gcd(31,2015) * 48 \newline
+                                        & \quad + \gcd(65, 2015) * 30 + \gcd(155,2015) * 12 + \gcd(403,2015) * 4 \newline
+                                        & \quad + \gcd(2015, 2015) * 1 + \sum_{x \not\in \\{5,13,31,65,155,403,2015\\}}\gcd(x,2015) * 1440 \newline
+                                    & = 5 * 360 + 13 * 120 + 31 * 48 + 65 * 30 + 155 * 12 + 403 * 4 \newline
+                                        & \quad + 2015 * 1 + 1 * 1440 \newline
                                     & = 13725
 \end{aligned}
 

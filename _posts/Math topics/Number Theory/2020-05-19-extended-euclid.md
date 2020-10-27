@@ -45,6 +45,6 @@ After rearranging terms in (\ref{EEA2}) we'll get,
 And so,
 
 \begin{aligned}
-x & = y_1\\\
-y & = x_1 - y_1\cdot\floor{\frac{a}{b}} \\\
+x & = y_1 \newline
+y & = x_1 - y_1\cdot\floor{\frac{a}{b}} \newline
 \end{aligned}

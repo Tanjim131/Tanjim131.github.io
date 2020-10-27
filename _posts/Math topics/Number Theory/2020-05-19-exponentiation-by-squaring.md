@@ -27,8 +27,8 @@ Expressed recursively,
 \\[
 a^n =  
 \begin{cases}
-  1 & \textrm{if $ n == 0 $} \\\
-  (a^{\sfrac{n}{2}})^2 & \textrm{if $n$ is even} \\\
+  1 & \textrm{if $ n == 0 $} \newline
+  (a^{\sfrac{n}{2}})^2 & \textrm{if $n$ is even} \newline
   (a^{\sfrac{n - 1}{2}})^2 \cdot a & \textrm{if $n$ is odd}
 \end{cases}
 \\]
